@@ -11,6 +11,8 @@ Conceitos, fundamentos e exercícios sobre Javascript.
 - [Funções](#funções)
 - [Operadores](#operadores)
 - [Controle de fluxo](#controle-de-fluxo)
+- [Programação assíncrona](#programação-assíncrona)
+
 ### Variáveis
 
 ```Javascript
@@ -88,7 +90,7 @@ let person = {
     lastName: 'da Silva',
     age: 35,
     greet: function() {
-        console.log('Hello I am ${this.nome}');
+        console.log(`Hello I am ${this.nome}`);
     }
 }
 ```
@@ -251,4 +253,19 @@ do {
     console.log(i);
     i++;
 } while (i < 5);
+```
+
+### Programação Assíncrona
+
+Em programação assíncrona, as ações não vão acontecer uma após outra de cima pra baixo nas linhas de código, e sim de acordo com a disponibilidade de recursos e com as regras de negócio definidas. <br>
+Um exemplo são as __Promises__, que são uma forma de dizer que um valor pode estar presente num momento futuro para que o código continue.
+
+```Javascript
+let promessa = Promise.resolve(5);
+
+console.log("Outras linhas de código");
+
+console.log(promessa);
+
+promessa.then((value) => {console.log(`O valor é ${value}`)});
 ```
