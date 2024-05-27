@@ -49,3 +49,18 @@ npm run dev
 ```
 
 * Que estaremos utilizando as dependencias de desenvolvimento.
+
+## Observação
+
+Caso esteja guardando seu repositório em um ambiente como GitHub, é de boa prática utilizar __.gitignore__ para não enviar a pasta node_modules.
+
+```
+node_modules/
+```
+
+Quando compartilhar com outros desenvolvedores, não compartilhe esta pasta e peça que usem:
+
+```bash
+npm install
+```
+para instalar dependências.
