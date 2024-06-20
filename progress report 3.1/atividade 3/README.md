@@ -21,7 +21,7 @@ Então use estes comandos no terminal:
 
 ```bash
 docker compose up -d # para iniciar o docker de MongoDB e o Adminer
-npm run # para iniciar a API
+npm run start # para iniciar a API
 ```
 
 ## Exemplos de uso:
