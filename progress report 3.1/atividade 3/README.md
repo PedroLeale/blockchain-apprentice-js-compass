@@ -24,6 +24,30 @@ docker compose up -d # para iniciar o docker de MongoDB e o Adminer
 npm run start # para iniciar a API
 ```
 
+## Funcionalidades
+
+* Cadastrar cidade
+* Cadastrar cliente
+* Consultar cidade pelo nome
+* Consultar cidade pelo estado
+* Consultar cliente pelo nome
+* Consultar cliente pelo ID
+* Remover cliente
+* Alterar nome do cliente
+
+### Dados básicos para cadastro:
+
+Cliente: 
+* Nome
+* Sexo
+* Data de nascimento
+* Cidade onde mora
+* Senha
+
+Cidade
+* Nome
+* Estado (sigla)
+
 ## Exemplos de uso:
 
 ### Cadastro e login de cliente
